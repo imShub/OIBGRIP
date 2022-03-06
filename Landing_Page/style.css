@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Default CSS */
+section{
+    width: 100%;
+    height: 100vh;
+}
+p {
+    letter-spacing: 0;
+    line-height: 1.8;
+}
+.section-header h2 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.section-header p {
+    width: 50%;
+    margin: auto;
+}
+p {
+    letter-spacing: 0;
+    line-height: 1.8;
+}
+.row{
+    --bs-gutter-x: 0!important;
+}
+
+
+/* Social Icon Bar */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    /* right: 0%; */
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+.icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  } 
+
+
+
+  .navbar .navbar-brand{
+      color: white;
+    font-weight: bolder;
+    font-size: 2rem!important;
+    font-variant: small-caps;
+}
+.navbar .navbar-nav{
+    margin-left: 220px;
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem!important;
+    font-variant: small-caps;
+}
+.navbar .navbar-nav .nav-item:hover a{
+    border-bottom: 2px solid white;
+    /* text-decoration: 3px solid white underline; */
+}
+
+/* Home Section CSS*/
+main .home{
+    width: 100%;
+    height: 90vh;
+}
+main .home-image{
+    position: absolute;
+    min-width: 100%;
+    height: 100vh;
+    z-index: -200;
+}
+.home .home-heading{
+    font-size: 5vw!important;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-left: 10vw;
+}
+.home .home-info{
+    font-size: 1.2rem!important;
+    color: white;
+    font-weight: 700;
+    padding-left: 10vw;
+}
+.home .get-started, .get-started{
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-color: orangered;
+    margin-left: 10vw;
+}
+.home .get-started:hover{
+    color: black;
+    background: linear-gradient(to left, #f12711, #f5af19);
+    border-color: transparent;
+    border-radius: 5px;
+    transition: ease-in 0.15s;
+}
+
+
+/* About Section CSS*/
+.about{
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+}
+.about-img{    
+    margin-left: 2vw;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 85%!important;
+}
+.about-text h4 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.about-text h5 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.about-text .get-started{
+    margin-left: 0!important;
+}
+.about-text .get-started:hover{
+    color: black;
+    background: linear-gradient(to left, #f12711, #f5af19);
+    border-color: transparent;
+    border-radius: 5px;
+    transition: ease-in 0.15s;
+}
+
+/* Gallery Section CSS */
+.gallery{
+    background-color: #111111;
+    height: auto;
+}
+.gallery .section-header h2 {
+    color: whitesmoke;
+}
+
+.gallery-items {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.gallery-items .img {
+    display: block;
+    position: relative;
+}
+
+.gallery-items .img img {
+    width: 270px;
+}
+
+
+/* Contact Us Section CSS */
+.contact .section-header h2{
+    text-align: center;
+}
+.contact .section-header p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact .right-contact h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+}
+.contact .get-started:hover{
+    background-color: #111!important;
+    color: white;
+}
+.contact .get-started{
+    margin-left: 0;
+    color: black;
+    background: linear-gradient(to left, #f12711, #f5af19);
+    border-color: transparent;
+    border-radius: 5px;
+    transition: ease-in 0.15s;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    main .home{
+        height: 70vh;
+    }
+    .home .home-heading{
+        font-size: 50px!important;
+    }
+    .home .home-info{
+        font-size: 18px!important;
+        width: 250px;
+    }
+    main .home-image{
+        width: 100%;
+        height: 75vh;
+    }
+    .icon-bar{
+        display: none;
+    }
+    main .about{
+        height: auto;
+    }
+    .about-text h4{
+        font-size: 50px;
+        text-align: center;
+    }
+    .about-text h5{
+        text-align: center;
+        font-size: 30px;
+    }
+    .about-text{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text .get-started{
+        margin-bottom: 30px;
+    }
+    main .gallery{
+        height: auto;
+    }
+    .gallery-items{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact h2{
+        font-size: 40px;
+    }
+    .contact p{
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+        width: auto;
+    }
+    .contact .right-contact{
+        text-align: center;
+    }
+    .contact .right-contact h2{
+        font-size: 45px;
+    }
+    .contact input{
+        margin: 10px 0;
+    }
+    .contact .get-started{
+        margin-bottom: 30px;
+    }
+}
